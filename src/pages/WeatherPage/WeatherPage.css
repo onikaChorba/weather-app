@@ -50,3 +50,54 @@
   font-weight: 400;
   margin: 0;
 }
+
+@media (max-width: 1024px){
+  .weather-page-layout{
+    flex-direction: column;
+    height: auto;
+    overflow-y: auto;
+  }
+
+  .hero-section{
+    padding: var(--mobile-padding);
+    min-height: 60vh;
+  }
+
+  .hero-content{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .hero-temp{
+    padding-left: 0;
+    font-size: clamp(80px, 25vw, 120px);
+    line-height: 1;
+  }
+
+  .hero-city{
+    font-size: 40px;
+  }
+
+  .glass-panel{
+    width: 100% !important;
+    height: auto !important;
+    border-left: none !important;
+    border-top: 1px solid var(--border-glass);
+    padding: 30px var(--mobile-padding) !important;
+  }
+}
+
+@media (max-width: 480px){
+  .hero-temp{
+    font-style: 80px;
+  }
+
+  .location-details{
+    gap: 15px;
+  }
+
+  .hero-city{
+    font-size: 32px;
+  }
+}
