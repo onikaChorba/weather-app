@@ -56,6 +56,10 @@
   color: var(--text-main);
 }
 
+.glass-input::placeholder{
+  color: var(--text-dim);
+}
+
 .section-label {
   font-size: 11px;
   font-weight: 600;
@@ -119,4 +123,49 @@
 
 .weather-details {
   margin-top: 20px;
+}
+
+@media (max-width: 1024px){
+  .glass-panel{
+    width: 100%;
+    height: auto;
+    min-height: 40vh;
+    border-left: none;
+    border-top: 1px solid var(--border-glass);
+    padding: 30px var(--mobile-padding);
+    gap: 30px;
+  }
+
+  .search-container{
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+
+  .glass-input{
+    flex: 1;
+  }
+
+  .search-button{
+    width: auto;
+    padding: 12px 20px;
+  }
+
+  .stats-row{
+    margin-bottom: 15px;
+  }
+
+  .section-label{
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px){
+  .glass-panel{
+    padding: 25px 15px;
+  }
+
+  .stats-row{
+    font-size: 14px;
+  }
 }
