@@ -19,6 +19,7 @@
   --hero-letter-spacing: -0.08em;
 
   --page-padding: 60px;
+  --mobile-padding: 20px;
   --transition-smooth: all 0.3s ease;
   --bg-overlay: linear-gradient(#00000080,
         #0000004d);
