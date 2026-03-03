@@ -1,3 +1,26 @@
 :root {
+  --text-main: #ffffff;
+  --text-dim: #ffffff99;
+  --text-accent: #87ceeb;
+
+  --bg-glass: #ffffff0a;
+  --border-glass: #ffffff26;
+  --blur-glass: blur(9.5px);
+
+  --accent-orange: #ffb05c4d;
+  --divider-color: #ffffff1a;
+  --input-placeholder: #ffffffb3;
+
+  --text-shadow: 2px 2px 10px #0000004d;
+
+  --hero-font-family: 'Roboto', sans-serif;
+  --hero-font-size: 143px;    
+  --hero-line-height: 168px;
+  --hero-letter-spacing: -0.08em;
+
+  --page-padding: 60px;
+  --transition-smooth: all 0.3s ease;
+  --bg-overlay: linear-gradient(#00000080,
+        #0000004d);
 }
 

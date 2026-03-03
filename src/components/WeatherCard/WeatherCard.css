@@ -1,0 +1,122 @@
+.glass-panel{
+  width: 526px;
+  height: 100vh;
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  box-sizing: border-box;
+  background: var(--bg-glass);
+  backdrop-filter: var(--blur-glass);
+  border-left: 5px solid var(--border-glass);
+  color: var(--text-main);
+}
+
+.search-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.search-button{
+  background: var(--accent-orange);
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  color: var(--text-dim);
+  font-weight: bold;
+  transition: var(--transition-smooth);
+  border-radius: 4px;
+}
+
+.search-button:hover {
+  filter: brightness(1.1);
+  transform: scale(1.05);
+}
+
+.condition-highlight {
+  color: var(--text-accent);
+  text-shadow: var(--text-shadow);
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 10px 0 40px 0;
+}
+
+.glass-input{
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--border-glass);
+  width: 100%;
+  padding: 8px 0px;
+  font-size: 16px;
+  outline: none;
+  color: var(--text-main);
+}
+
+.section-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: var(--text-main);
+  opacity: 0.7;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-label::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--divider-color);
+}
+
+.condition-text{
+  color: var(--text-dim);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.stats-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+.stats-row span:first-child {
+  color: var(--text-dim);
+  font-weight: 300;
+}
+
+.stats-row span:last-child {
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.stats-item{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.stats-item span:first-child{
+  color: var(--text-dim);
+}
+
+.glass-divider{
+  border: none;
+  border-top: 1px solid var(--border-glass);
+}
+
+.weather-details {
+  margin-top: 20px;
+}

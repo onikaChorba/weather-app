@@ -1,0 +1,52 @@
+.weather-page-layout{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: var(--bg-overlay),
+    url("../../assets/imgs/bg-photo.jpg") center/cover no-repeat;
+    color: var(--text-main);
+  transition: var(--transition-smooth);
+  font-family: var(--hero-font-family);
+}
+
+.hero-section{
+  flex: 1;
+  padding: var(--page-padding);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo{
+  width: 90px;
+}
+
+.location-details {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero-content{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero-temp{
+  font-size: var(--hero-font-size);
+  line-height: var(--hero-line-height);
+  letter-spacing: var(--hero-letter-spacing);
+  font-weight: 400;
+  color: var(--text-main);
+  text-shadow: var(--text-shadow);
+  margin: 0;
+  padding-left: 60px;
+}
+
+.hero-city{
+  font-family: var(--hero-font-family);
+  font-size: 64px;
+  font-weight: 400;
+  margin: 0;
+}
