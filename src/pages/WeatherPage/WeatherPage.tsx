@@ -57,7 +57,7 @@ const WeatherPage: React.FC = () => {
                   <h2 className="hero-city">{weather.name}</h2>
                   <p className="hero-date">
                     {new Date().toLocaleTimeString('uk-UA', { hour: '2-digit', minute: '2-digit' })} -
-                    {new Date().toLocaleDateString('uk-UA', {
+                    {" "}{new Date().toLocaleDateString('uk-UA', {
                       weekday: 'long',
                       day: 'numeric',
                       month: 'short',

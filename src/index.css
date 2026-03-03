@@ -3,11 +3,11 @@
   --text-dim: #ffffff99;
   --text-accent: #87ceeb;
 
-  --bg-glass: #ffffff0d;
+  --bg-glass: #ffffff0a;
   --border-glass: #ffffff26;
-  --blur-glass: blur(25px);
+  --blur-glass: blur(9.5px);
 
-  --accent-irange: #ffb05c;
+  --accent-orange: #ffb05c4d;
   --divider-color: #ffffff1a;
   --input-placeholder: #ffffffb3;
 

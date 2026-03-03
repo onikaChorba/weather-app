@@ -1,6 +1,6 @@
-import type React from "react";
+import './WeatherCard.css';
+import React, { useState } from "react";
 import { type WeatherData } from "../../types/weather";
-import { useState } from "react";
 
 interface Props {
   data: WeatherData,
@@ -21,20 +21,45 @@ const WeatherCard: React.FC<Props> = ({ data, onSearch }) => {
   }
 
   return (
-    <aside>
-      <div>
+    <aside className="glass-panel">
+      <div className="search-container">
         <input
           type="text"
-          placeholder="Введіть локацію..."
           value={inputValue}
+          className="glass-input"
+          onKeyDown={handleKeyPress}
+          placeholder="Введіть локацію..."
           onChange={(e) => setInputValue(e.target.value)}
-          onKeyDown={handleKeyPress} />
-        <button onClick={handleSearchClick}>Показати</button>
+        />
+        <button onClick={handleSearchClick} className="search-button">Показати</button>
       </div>
 
-      <div>
-        <p>Погодні деталі </p>
-        <p>{data.weather[0].description}</p>
+      <div className="weather-details">
+        <p className="section-label">Погодні деталі...</p>
+        <p className="condition-highlight">{data.weather[0].description}</p>
+
+        <div className="stats-list">
+          <div className="stats-row">
+            <span> Максимальна температура</span>
+            <span>{Math.round(data.main.temp_max)}°</span>
+          </div>
+          <div className="stats-row">
+            <span> Мінімальна температура</span>
+            <span>{Math.round(data.main.temp_min)}°</span>
+          </div>
+          <div className="stats-row">
+            <span> Вологість</span>
+            <span>{data.main.humidity} %</span>
+          </div>
+          <div className="stats-row">
+            <span> Хмарність</span>
+            <span>{data.clouds.all}</span>
+          </div>
+          <div className="stats-row">
+            <span> Вітер</span>
+            <span>{data.wind.speed} km/h</span>
+          </div>
+        </div>
       </div>
     </aside>
   )
