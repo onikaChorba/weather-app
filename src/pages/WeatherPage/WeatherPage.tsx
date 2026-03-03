@@ -43,6 +43,8 @@ const WeatherPage: React.FC = () => {
 
   return (
     <div className="weather-page-layout">
+      {loading && <div className="loader">Оновлення...</div>}
+
       <main className="hero-section">
         <div className="logo"><img src={logo} alt="logo" /></div>
         {
