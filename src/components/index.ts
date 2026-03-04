@@ -1,3 +1,4 @@
+import { Loader } from "./Loader";
 import { WeatherCard } from "./WeatherCard";
 
-export { WeatherCard };
+export { Loader, WeatherCard };

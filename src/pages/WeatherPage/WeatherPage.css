@@ -9,6 +9,26 @@
   font-family: var(--hero-font-family);
 }
 
+.main-display{
+  min-height: 200px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.loader-wrapper{
+  padding-left: 60px;
+  margin-bottom: 40px;
+}
+
+.error-state .hero-city{
+  color: var(--accent-orange);
+  font-size: 48px;
+}
+
+.error-state .hero-temp{
+  opacity: 0.3;
+}
+
 .hero-section{
   flex: 1;
   padding: var(--page-padding);
