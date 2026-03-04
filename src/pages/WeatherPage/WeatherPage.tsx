@@ -29,8 +29,12 @@ const WeatherPage: React.FC = () => {
 
       setWeather(data);
       setCity(targetCity);
-    } catch (error: any) {
-      setError(error.message)
+    } catch (error) {
+      if (error instanceof Error) {
+        setError(error.message)
+      } else {
+        setError("Сталася невідома помилка")
+      }
     } finally {
       setLoading(false)
     }
